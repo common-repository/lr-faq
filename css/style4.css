@@ -1,0 +1,56 @@
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+#accordion .panel{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: -5px;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border: none;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 15px 20px 15px 50px;
+    background: #fafafa;
+    font-size: 16px;
+    font-weight: 600;
+    color: #b4a231;
+    border-top: 1px solid #b4a231;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+#accordion .panel:last-child .panel-title a{
+    border-bottom: 1px solid #b4a231;
+}
+#accordion .panel-title a.collapsed{
+    background: #f3f2eb;
+    color: #333;
+}
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before,
+#accordion .panel-title a:after,
+#accordion .panel-title a.collapsed:after{
+    content: "";
+    width: 16px;
+    height: 4px;
+    background: #b4a231;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: all 0.3s ease 0s;
+}
+#accordion .panel-title a.collapsed:after{
+    transform: rotate(90deg);
+}
+#accordion .panel-body{
+    padding: 10px 20px 10px 50px;
+    background: #b4a231;
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+    border-top: none;
+}

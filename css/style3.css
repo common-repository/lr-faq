@@ -1,0 +1,55 @@
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+#accordion .panel{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: -4px;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border-radius: 0;
+    border: none;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 14px 30px;
+    background: #00a79c;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    border-bottom: none;
+    transition: all 0.5s ease 0s;
+}
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before{
+    content: "\f106";
+    font-family: fontawesome;
+    position: absolute;
+    top: 11px;
+    right: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+#accordion .panel-title a.collapsed:before{
+    content: "\f107";
+}
+#accordion .panel-body{
+    padding: 20px 25px;
+    background: #313333;
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+    position: relative;
+    border: none;
+    border-left: 5px solid #ef5959;
+    border-bottom: 1px solid #ef5959;
+    margin-left: 40px;
+    transition: all 0.5s ease 0s;
+}
+@media only screen and (max-width: 480px){
+    #accordion .panel-body{ margin-left: 20px; }
+}
